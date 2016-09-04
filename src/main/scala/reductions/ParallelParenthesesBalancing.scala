@@ -41,22 +41,60 @@ object ParallelParenthesesBalancing {
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
    */
   def balance(chars: Array[Char]): Boolean = {
-    ???
+    var i = 0
+    var count = 0
+    val max = chars.length
+    while (i < max) {
+      val c = chars(i)
+      if (c == '(')
+        count = count + 1
+      else if (c == ')') {
+        count = count - 1
+        if (count < 0)
+          i = max
+      }
+      i = i + 1
+    }
+    count == 0
   }
 
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
    */
   def parBalance(chars: Array[Char], threshold: Int): Boolean = {
 
-    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int) /*: ???*/ = {
-      ???
+    def traverse(idx: Int, until: Int, count: Int, min: Int) : (Int, Int) = {
+      // TODO Why are count and min pars needed?
+      var i = idx
+      var newCount = count
+      var newMin = min
+      while (i < until) {
+        val c = chars(i)
+
+        if (c == '(')
+          newCount += 1
+        else if (c == ')')
+          newCount -= 1
+
+        if (newCount < newMin)
+          newMin = newCount
+
+        i += 1
+      }
+      (newCount, newMin)
     }
 
-    def reduce(from: Int, until: Int) /*: ???*/ = {
-      ???
+    def reduce(from: Int, until: Int): (Int, Int) = {
+      if (until - from < threshold)
+        traverse(from, until, 0, 0)
+      else {
+        val mid = (until + from) / 2
+        val ((countL, minL), (countR, minR)) = parallel(reduce(from, mid), reduce(mid, until))
+        val temp = minR + countL
+        (countL + countR, if (minL < temp) minL else temp)
+      }
     }
 
-    reduce(0, chars.length) == ???
+    reduce(0, chars.length) == (0, 0)
   }
 
   // For those who want more:
