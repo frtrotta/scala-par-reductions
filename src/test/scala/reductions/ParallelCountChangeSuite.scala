@@ -63,5 +63,63 @@ class ParallelCountChangeSuite extends FunSuite {
     check(250, List(1, 2, 5, 10, 20, 50), 177863)
   }
 
+  test("Equivalence of parallel implementation 1a") {
+    def check(money: Int, coins: List[Int]) =
+      assert(parCountChange(money, coins, moneyThreshold(money)) == 0,
+        s"countChang($money, _) should be 0")
 
+    check(-1, List())
+    check(-1, List(1, 2, 3))
+    check(-Int.MinValue, List())
+    check(-Int.MinValue, List(1, 2, 3))
+  }
+
+  test("Equivalence of parallel implementation 2a") {
+    def check(money: Int, coins: List[Int], expected: Int) =
+      assert(parCountChange(money, coins, moneyThreshold(money)) == expected,
+        s"countChange($money, $coins) should be $expected")
+
+    check(50, List(1, 2, 5, 10), 341)
+    check(250, List(1, 2, 5, 10, 20, 50), 177863)
+  }
+
+  test("Equivalence of parallel implementation 1b") {
+    def check(money: Int, coins: List[Int]) =
+      assert(parCountChange(money, coins, totalCoinsThreshold(coins.length)) == 0,
+        s"countChang($money, _) should be 0")
+
+    check(-1, List())
+    check(-1, List(1, 2, 3))
+    check(-Int.MinValue, List())
+    check(-Int.MinValue, List(1, 2, 3))
+  }
+
+  test("Equivalence of parallel implementation 2b") {
+    def check(money: Int, coins: List[Int], expected: Int) =
+      assert(parCountChange(money, coins, totalCoinsThreshold(coins.length)) == expected,
+        s"countChange($money, $coins) should be $expected")
+
+    check(50, List(1, 2, 5, 10), 341)
+    check(250, List(1, 2, 5, 10, 20, 50), 177863)
+  }
+
+  test("Equivalence of parallel implementation 1c") {
+    def check(money: Int, coins: List[Int]) =
+      assert(parCountChange(money, coins, combinedThreshold(money, coins)) == 0,
+        s"countChang($money, _) should be 0")
+
+    check(-1, List())
+    check(-1, List(1, 2, 3))
+    check(-Int.MinValue, List())
+    check(-Int.MinValue, List(1, 2, 3))
+  }
+
+  test("Equivalence of parallel implementation 2c") {
+    def check(money: Int, coins: List[Int], expected: Int) =
+      assert(parCountChange(money, coins, combinedThreshold(money, coins)) == expected,
+        s"countChange($money, $coins) should be $expected")
+
+    check(50, List(1, 2, 5, 10), 341)
+    check(250, List(1, 2, 5, 10, 20, 50), 177863)
+  }
 }
