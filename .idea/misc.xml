@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="true" assert-keyword="false" jdk-15="false">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/Downloads/example" value="1456682956000" />
+        <entry key="$USER_HOME$/Downloads/funsets" value="1462312640000" />
+        <entry key="$USER_HOME$/Downloads/recfun" value="1462365530000" />
+        <entry key="$PROJECT_DIR$/../../../Example" value="1470043591000" />
+        <entry key="$PROJECT_DIR$/../../2-Design/calculator" value="1465303746000" />
+        <entry key="$PROJECT_DIR$/../../2-Design/quickcheck" value="1464280970000" />
+        <entry key="$PROJECT_DIR$/../../2-Design/streams" value="1464279852000" />
+        <entry key="$PROJECT_DIR$" value="1465230082000" />
+        <entry key="$PROJECT_DIR$/../scalashop" value="1465228694000" />
+        <entry key="$PROJECT_DIR$/../../forcomp" value="1462309612000" />
+        <entry key="$PROJECT_DIR$/../../objsets" value="1470409390000" />
+        <entry key="$PROJECT_DIR$/../../patmat" value="1462372864000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
