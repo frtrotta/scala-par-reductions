@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd6285bb-8e56-4067-ada3-e8f21048ad69" name="Default" comment="parBl">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="cd6285bb-8e56-4067-ada3-e8f21048ad69" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/reductions/ParallelParenthesesBalancing.scala" afterPath="$PROJECT_DIR$/src/main/scala/reductions/ParallelParenthesesBalancing.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/reductions/ParallelParenthesesBalancingSuite.scala" afterPath="$PROJECT_DIR$/src/test/scala/reductions/ParallelParenthesesBalancingSuite.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala" afterPath="$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala" />
     </list>
     <ignored path="parprog1-reductions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,21 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ParallelParenthesesBalancing.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/reductions/ParallelParenthesesBalancing.scala">
+      <file leaf-file-name="LineOfSightSuite.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/reductions/LineOfSightSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+            <state relative-caret-position="225">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParallelParenthesesBalancingSuite.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/reductions/ParallelParenthesesBalancingSuite.scala">
+      <file leaf-file-name="LineOfSight.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+            <state relative-caret-position="273">
+              <caret line="123" column="20" selection-start-line="123" selection-start-column="6" selection-end-line="123" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -70,6 +68,7 @@
         <option value="$PROJECT_DIR$/src/test/scala/reductions/ParallelCountChangeSuite.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/reductions/ParallelParenthesesBalancingSuite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/reductions/ParallelParenthesesBalancing.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala" />
       </list>
     </option>
   </component>
@@ -241,6 +240,36 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="reductions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parprog1-reductions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reductions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reductions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LineOfSight.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -582,7 +611,21 @@
       <option name="project" value="LOCAL" />
       <updated>1473005086661</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="parBalance completed">
+      <created>1473016678290</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1473016678290</updated>
+    </task>
+    <task id="LOCAL-00003" summary="threshold comparison implemented as &lt;= in parBalance">
+      <created>1473017045610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1473017045610</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -624,8 +667,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="parCountChange implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="parCountChange implemented" />
+    <MESSAGE value="parBalance completed" />
+    <MESSAGE value="threshold comparison implemented as &lt;= in parBalance" />
+    <option name="LAST_COMMIT_MESSAGE" value="threshold comparison implemented as &lt;= in parBalance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -648,14 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/reductions/ParallelCountChangeSuite.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="118" column="73" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/reductions/ParallelCountChange.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -674,8 +712,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/reductions/ParallelParenthesesBalancing.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+        <state relative-caret-position="93">
+          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/reductions/ParallelCountChangeSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="118" column="73" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/reductions/LineOfSightSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="123" column="20" selection-start-line="123" selection-start-column="6" selection-end-line="123" selection-end-column="20" />
           <folding />
         </state>
       </provider>
